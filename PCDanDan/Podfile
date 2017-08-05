@@ -1,0 +1,7 @@
+platform:ios,'8.0'
+
+target 'PCDanDan' do
+pod 'MBProgressHUD','~>0.8'
+pod 'LKDBHelper', '~>2.1.8'
+pod 'AFNetworking', '~> 3.0'
+end

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="36" id="KGk-i7-Jjw" customClass="IntoRoomMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎小蝌蚪进入房间..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAA-Yn-lL8">
+                        <rect key="frame" x="92" y="10" width="136" height="18"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="136" id="Xab-cU-asH"/>
+                            <constraint firstAttribute="height" constant="18" id="tc1-Qg-rhm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNX-U7-Usb">
+                        <rect key="frame" x="71.5" y="7" width="178.5" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgI-zS-h3M">
+                                <rect key="frame" x="12" y="0.0" width="22.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouye_215.png" translatesAutoresizingMaskIntoConstraints="NO" id="est-b5-sgj">
+                                <rect key="frame" x="39.5" y="-4" width="42" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="3xo-Aa-xmJ"/>
+                                    <constraint firstAttribute="height" constant="26" id="Zgw-MY-kFB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更好散" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-fn-r1Y">
+                                <rect key="frame" x="74.5" y="0.0" width="34" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进入房间..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VH-14-sTl">
+                                <rect key="frame" x="111.5" y="0.0" width="55" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="2XS-BT-rx6"/>
+                            <constraint firstItem="est-b5-sgj" firstAttribute="top" secondItem="UNX-U7-Usb" secondAttribute="top" constant="-4" id="5Kg-8M-QKM"/>
+                            <constraint firstItem="gEw-fn-r1Y" firstAttribute="leading" secondItem="GgI-zS-h3M" secondAttribute="trailing" constant="40" id="5Te-bq-HEZ"/>
+                            <constraint firstItem="4VH-14-sTl" firstAttribute="top" secondItem="UNX-U7-Usb" secondAttribute="top" id="LIt-MF-LqL"/>
+                            <constraint firstAttribute="bottom" secondItem="4VH-14-sTl" secondAttribute="bottom" id="Qe8-t1-rOv"/>
+                            <constraint firstItem="4VH-14-sTl" firstAttribute="leading" secondItem="gEw-fn-r1Y" secondAttribute="trailing" constant="3" id="YLM-oz-PYa"/>
+                            <constraint firstItem="gEw-fn-r1Y" firstAttribute="top" secondItem="UNX-U7-Usb" secondAttribute="top" id="fDS-At-Goy"/>
+                            <constraint firstAttribute="bottom" secondItem="GgI-zS-h3M" secondAttribute="bottom" id="g9A-Ws-uzV"/>
+                            <constraint firstItem="est-b5-sgj" firstAttribute="leading" secondItem="GgI-zS-h3M" secondAttribute="trailing" constant="5" id="pAr-zz-PqZ"/>
+                            <constraint firstAttribute="bottom" secondItem="gEw-fn-r1Y" secondAttribute="bottom" id="rrR-jL-h1H"/>
+                            <constraint firstItem="GgI-zS-h3M" firstAttribute="leading" secondItem="UNX-U7-Usb" secondAttribute="leading" constant="12" id="u9S-VQ-Bwe"/>
+                            <constraint firstAttribute="trailing" secondItem="4VH-14-sTl" secondAttribute="trailing" constant="12" id="uUV-52-pcb"/>
+                            <constraint firstItem="GgI-zS-h3M" firstAttribute="top" secondItem="UNX-U7-Usb" secondAttribute="top" id="ykf-aW-gZK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UNX-U7-Usb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="J5Q-kN-X3h"/>
+                    <constraint firstItem="fAA-Yn-lL8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LGz-yX-pyO"/>
+                    <constraint firstItem="fAA-Yn-lL8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Sjd-1G-WSM"/>
+                    <constraint firstItem="UNX-U7-Usb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="blF-1E-CSd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="labelWidth" destination="Xab-cU-asH" id="cGB-4U-SSX"/>
+                <outlet property="levelImage" destination="est-b5-sgj" id="P9c-35-vcI"/>
+                <outlet property="levelImageHeight" destination="Zgw-MY-kFB" id="FaM-23-kOf"/>
+                <outlet property="levelImageTop" destination="5Kg-8M-QKM" id="gUb-Aa-AQ4"/>
+                <outlet property="levelImageWidth" destination="3xo-Aa-xmJ" id="iia-Z6-2Ic"/>
+                <outlet property="nameLeft" destination="5Te-bq-HEZ" id="Uln-A2-4HL"/>
+                <outlet property="titleLabel" destination="fAA-Yn-lL8" id="g1h-xU-VX9"/>
+                <outlet property="userInfoBgVIEW" destination="UNX-U7-Usb" id="TDI-T2-6T2"/>
+                <outlet property="userNameLabel" destination="gEw-fn-r1Y" id="GTi-d3-ZLc"/>
+            </connections>
+            <point key="canvasLocation" x="-86" y="46"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shouye_215.png" width="96" height="56"/>
+    </resources>
+</document>

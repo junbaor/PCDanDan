@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCenterListTableViewCell" id="KGk-i7-Jjw" customClass="UserCenterListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0i-1S-y3b">
+                        <rect key="frame" x="10" y="0.0" width="300" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wode_34.png" translatesAutoresizingMaskIntoConstraints="NO" id="TUf-LG-oIl">
+                                <rect key="frame" x="12" y="11" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="9SV-qO-z03"/>
+                                    <constraint firstAttribute="height" constant="18" id="I4j-5G-bZS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="礼物兑换" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-WT-5Ui">
+                                <rect key="frame" x="42" y="0.0" width="235" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wode_13.png" translatesAutoresizingMaskIntoConstraints="NO" id="ekC-6c-zai">
+                                <rect key="frame" x="277" y="14" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="V9A-1Q-CpJ"/>
+                                    <constraint firstAttribute="width" constant="13" id="ylV-eV-1QA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eeB-WT-5Ui" firstAttribute="top" secondItem="e0i-1S-y3b" secondAttribute="top" id="1Wo-zo-Rts"/>
+                            <constraint firstAttribute="trailing" secondItem="ekC-6c-zai" secondAttribute="trailing" constant="10" id="5wB-AM-jnl"/>
+                            <constraint firstItem="TUf-LG-oIl" firstAttribute="centerY" secondItem="e0i-1S-y3b" secondAttribute="centerY" id="ACX-aM-d8I"/>
+                            <constraint firstItem="ekC-6c-zai" firstAttribute="leading" secondItem="eeB-WT-5Ui" secondAttribute="trailing" id="BiX-d7-WIw"/>
+                            <constraint firstAttribute="bottom" secondItem="eeB-WT-5Ui" secondAttribute="bottom" id="Zpq-lq-1Ss"/>
+                            <constraint firstItem="TUf-LG-oIl" firstAttribute="leading" secondItem="e0i-1S-y3b" secondAttribute="leading" constant="12" id="fKG-tc-9h5"/>
+                            <constraint firstItem="ekC-6c-zai" firstAttribute="centerY" secondItem="e0i-1S-y3b" secondAttribute="centerY" id="k1W-8N-TOJ"/>
+                            <constraint firstItem="eeB-WT-5Ui" firstAttribute="leading" secondItem="TUf-LG-oIl" secondAttribute="trailing" constant="12" id="oSr-qa-m1N"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="e0i-1S-y3b" secondAttribute="trailing" constant="10" id="9kl-W1-BX4"/>
+                    <constraint firstAttribute="bottom" secondItem="e0i-1S-y3b" secondAttribute="bottom" constant="10" id="CHr-hB-7Mb"/>
+                    <constraint firstItem="e0i-1S-y3b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GXM-Xe-VZe"/>
+                    <constraint firstItem="e0i-1S-y3b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="L8I-Fd-A8B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="iconImage" destination="TUf-LG-oIl" id="S70-TO-wGm"/>
+                <outlet property="iconTitle" destination="eeB-WT-5Ui" id="hG3-Tk-YLu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="wode_13.png" width="24" height="24"/>
+        <image name="wode_34.png" width="34" height="34"/>
+    </resources>
+</document>

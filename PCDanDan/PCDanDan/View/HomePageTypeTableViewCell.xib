@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomePageTypeTableViewCell" rowHeight="235" id="KGk-i7-Jjw" customClass="HomePageTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdZ-n1-Vfz">
+                        <rect key="frame" x="10" y="2" width="145" height="247"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-j6-kKn">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="247"/>
+                                <state key="normal" image="shouye_27.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txN-EL-OYc">
+                                <rect key="frame" x="40" y="207" width="65" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7lG-id-K5p"/>
+                                    <constraint firstAttribute="width" constant="65" id="8QO-3Z-CWZ"/>
+                                </constraints>
+                                <state key="normal" image="shouye_200.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c7j-j6-kKn" firstAttribute="top" secondItem="hdZ-n1-Vfz" secondAttribute="top" id="Gjr-wC-xTC"/>
+                            <constraint firstItem="c7j-j6-kKn" firstAttribute="leading" secondItem="hdZ-n1-Vfz" secondAttribute="leading" id="QkX-UO-VAd"/>
+                            <constraint firstAttribute="trailing" secondItem="c7j-j6-kKn" secondAttribute="trailing" id="lTC-a4-GBZ"/>
+                            <constraint firstAttribute="bottom" secondItem="c7j-j6-kKn" secondAttribute="bottom" id="mKg-rN-O5s"/>
+                            <constraint firstAttribute="bottom" secondItem="txN-EL-OYc" secondAttribute="bottom" constant="20" id="mxn-co-Csb"/>
+                            <constraint firstItem="txN-EL-OYc" firstAttribute="centerX" secondItem="hdZ-n1-Vfz" secondAttribute="centerX" id="vJl-si-dLZ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTF-V3-fvg">
+                        <rect key="frame" x="165" y="2" width="145" height="247"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pG-CM-Wm2">
+                                <rect key="frame" x="0.0" y="1" width="145" height="246"/>
+                                <state key="normal" image="shouye_29.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry6-v0-MpM">
+                                <rect key="frame" x="40" y="207" width="65" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0oh-o7-Gyc"/>
+                                    <constraint firstAttribute="width" constant="65" id="XBf-7e-aFu"/>
+                                </constraints>
+                                <state key="normal" image="shouye_200.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ry6-v0-MpM" secondAttribute="bottom" constant="20" id="Gza-ZU-z56"/>
+                            <constraint firstItem="ry6-v0-MpM" firstAttribute="centerX" secondItem="lTF-V3-fvg" secondAttribute="centerX" id="HB2-yw-VwA"/>
+                            <constraint firstAttribute="trailing" secondItem="8pG-CM-Wm2" secondAttribute="trailing" id="JAd-iP-01O"/>
+                            <constraint firstItem="8pG-CM-Wm2" firstAttribute="leading" secondItem="lTF-V3-fvg" secondAttribute="leading" id="aJS-A6-nMk"/>
+                            <constraint firstAttribute="bottom" secondItem="8pG-CM-Wm2" secondAttribute="bottom" id="hpc-do-urs"/>
+                            <constraint firstItem="8pG-CM-Wm2" firstAttribute="top" secondItem="lTF-V3-fvg" secondAttribute="top" id="lYX-wB-y9D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lTF-V3-fvg" secondAttribute="bottom" constant="14" id="B4d-Tt-3PS"/>
+                    <constraint firstItem="hdZ-n1-Vfz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Mfd-iA-On6"/>
+                    <constraint firstAttribute="bottom" secondItem="hdZ-n1-Vfz" secondAttribute="bottom" constant="14" id="cl4-sm-lSK"/>
+                    <constraint firstItem="lTF-V3-fvg" firstAttribute="width" secondItem="hdZ-n1-Vfz" secondAttribute="width" id="dMt-IH-62j"/>
+                    <constraint firstItem="lTF-V3-fvg" firstAttribute="leading" secondItem="hdZ-n1-Vfz" secondAttribute="trailing" constant="10" id="eUS-Zw-Zs7"/>
+                    <constraint firstItem="hdZ-n1-Vfz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nKb-dz-2yT"/>
+                    <constraint firstItem="lTF-V3-fvg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="of5-sq-pxh"/>
+                    <constraint firstAttribute="trailing" secondItem="lTF-V3-fvg" secondAttribute="trailing" constant="10" id="yVs-sn-bhL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="jnd28Button" destination="8pG-CM-Wm2" id="7he-BS-Ag0"/>
+                <outlet property="jnd28SMButton" destination="ry6-v0-MpM" id="IpN-Em-MXF"/>
+                <outlet property="xy28Button" destination="c7j-j6-kKn" id="oh8-1B-Ii3"/>
+                <outlet property="xy28SMButton" destination="txN-EL-OYc" id="gLe-FM-J67"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="267.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shouye_200.png" width="130" height="40"/>
+        <image name="shouye_27.png" width="345" height="600"/>
+        <image name="shouye_29.png" width="345" height="600"/>
+    </resources>
+</document>

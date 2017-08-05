@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZhangBianListTableViewCell" id="KGk-i7-Jjw" customClass="ZhangBianListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-01-22" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0v-Un-THC">
+                        <rect key="frame" x="10" y="0.0" width="99" height="47"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD3-lm-VE0">
+                        <rect key="frame" x="110.5" y="0.0" width="99" height="47"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投注" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIx-3r-LEe">
+                        <rect key="frame" x="210.5" y="0.0" width="99.5" height="47"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-i0-7vL">
+                        <rect key="frame" x="10" y="46.5" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8Co-61-Bar"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qIx-3r-LEe" firstAttribute="leading" secondItem="bD3-lm-VE0" secondAttribute="trailing" constant="1" id="3xf-Zx-zTx"/>
+                    <constraint firstItem="qIx-3r-LEe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8XN-Pq-gpq"/>
+                    <constraint firstAttribute="bottom" secondItem="qIx-3r-LEe" secondAttribute="bottom" id="A2e-lb-Ptd"/>
+                    <constraint firstItem="Z0v-Un-THC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Bnt-pz-dzy"/>
+                    <constraint firstAttribute="bottom" secondItem="bD3-lm-VE0" secondAttribute="bottom" id="CPB-wg-SNO"/>
+                    <constraint firstItem="Z0v-Un-THC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DD2-hz-fhX"/>
+                    <constraint firstAttribute="trailing" secondItem="qIx-3r-LEe" secondAttribute="trailing" constant="10" id="Q7g-KD-gA5"/>
+                    <constraint firstItem="bD3-lm-VE0" firstAttribute="width" secondItem="Z0v-Un-THC" secondAttribute="width" id="Tiy-BM-73N"/>
+                    <constraint firstItem="BWe-i0-7vL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WV0-yc-GLT"/>
+                    <constraint firstItem="bD3-lm-VE0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bkg-86-4NQ"/>
+                    <constraint firstAttribute="trailing" secondItem="BWe-i0-7vL" secondAttribute="trailing" constant="10" id="cni-2w-5Fz"/>
+                    <constraint firstAttribute="bottom" secondItem="BWe-i0-7vL" secondAttribute="bottom" id="fSF-55-G34"/>
+                    <constraint firstItem="bD3-lm-VE0" firstAttribute="leading" secondItem="Z0v-Un-THC" secondAttribute="trailing" constant="1" id="h2D-pf-DdB"/>
+                    <constraint firstAttribute="bottom" secondItem="Z0v-Un-THC" secondAttribute="bottom" id="h2S-kL-zfl"/>
+                    <constraint firstItem="qIx-3r-LEe" firstAttribute="width" secondItem="Z0v-Un-THC" secondAttribute="width" id="lBm-ST-Rpr"/>
+                    <constraint firstItem="qIx-3r-LEe" firstAttribute="leading" secondItem="bD3-lm-VE0" secondAttribute="trailing" constant="1" id="qpz-Sr-l4W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="oneLabel" destination="Z0v-Un-THC" id="cLP-dR-gLt"/>
+                <outlet property="threeLabel" destination="qIx-3r-LEe" id="fzq-T9-Pzt"/>
+                <outlet property="twoLabel" destination="bD3-lm-VE0" id="DCA-Pl-jFH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

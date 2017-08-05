@@ -1,0 +1,124 @@
+//
+//  PCDanDan-Prefix.pch
+//  PCDanDan
+//
+//  Created by xcode.qi on 17/1/17.
+//  Copyright © 2017年 li. All rights reserved.
+//
+
+#ifndef PCDanDan_Prefix_pch
+#define PCDanDan_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PCDanDan_Prefix_pch */
+
+
+#define FullScreen   [[UIScreen mainScreen] bounds]
+#define PublicImage(imageName) [Tool imageInPublic:(imageName)]
+#define RGB(r,g,b)  [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
+
+#define kTimeValue 60
+
+//app主题色调
+#define AppColor RGB(57,58,63)
+
+#define HuangSColor RGB(247,141,74)
+
+#define LanSColor RGB(9,33,220)
+
+#define LvSColor RGB(54,127,37)
+
+#define HongSColor RGB(240,40,40)
+
+#define HuiSColor RGB(200,200,200)
+
+#define AppScheme @"shen3pcdandan"
+
+/******* 消息通知名称 *******/
+#define kReachableNetworkStatusChange @"ReachableNetworkStatusChange" //网络状态改变
+//更新个人信息
+#define kUpdateUserInfo @"kUpdateUserInfo"
+
+//登录成功
+#define kLoginSuccessStatue @"LoginSuccessStatue"
+
+//退出登陆
+#define KQuitLogin @"KQuitLogin"
+
+//微信支付回调
+#define kWeiXinPayNotif @"kWeiXinPayNotif"
+
+//微信key值
+//wx81b4aaddb606cdb8
+#define WeiXinAppId @"wx824b31f217e53f75"
+
+//密钥
+//e88468bf2f602a378b0fe7ea17aab420
+#define WeiXinAppSecret @"004e871a9b171f9caca4d33697e45dde"
+
+//qqkey值
+#define QQKey @""
+
+//qq密钥
+#define QQSecret @""
+
+//环信key
+#define IMKey @"1194170530115396#pcdd"
+
+/******* 支付宝账号信息 *******/
+
+//收款账户
+#define AliPayAccount @""
+
+//支付宝pid
+#define AliPayId @""//pid
+
+//秘钥
+#define AliPayPrivateKey @""
+
+//回调地址
+#define AliPayNotifyURL @"pcdd-api-client-interface/ali/recv"
+
+
+
+/******* 全局头文件 *******/
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
+#import "MBProgressHUD.h"
+#import "IQKeyboardManager.h"
+#import "CycleScrollView.h"
+#import "TarBarController.h"
+#import "MJRefresh.h"
+#import "LoginViewController.h"
+#import "SafariViewController.h"
+#import "Tool.h"
+#import "UserInfo.h"
+#import "UnReadMessageNumInfo.h"
+#import "ShareManager.h"
+#import "URLDefine.h"
+#import "HttpHelper.h"
+#import "NSDiction+External.h"
+#import "UIImageView+EMWebCache.h"
+#import "NSString+WPAttributedMarkup.h"
+#import "EaseUI.h"
+#import "EMSDK.h"
+#import "HttpMangerHelper.h"
+#import "CommonMenuView.h"
+#import "UIView+AdjustFrame.h"
+#import "UITabBar+badge.h"
+#import "UIAlertView+BlocksKit.h"
+#import "KeFuViewController.h"
+#import "ChatViewController.h"
+
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
+#import "WXApi.h"
+//腾讯开放平台（对应QQ和QQ空间）SDK头文件
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#endif

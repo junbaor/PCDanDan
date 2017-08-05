@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModifyLoginPwdViewController">
+            <connections>
+                <outlet property="sureButton" destination="MzA-PB-zm8" id="dyj-sG-sqD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xmmText" destination="VBE-Ir-sSp" id="Heg-Jr-13E"/>
+                <outlet property="ymmText" destination="zs9-uy-y0c" id="9NP-SV-GbM"/>
+                <outlet property="zcqrText" destination="hhb-83-FDp" id="aFS-i6-hqH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bU6-lY-grD">
+                    <rect key="frame" x="16" y="25" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="95t-Ax-vqr"/>
+                        <constraint firstAttribute="height" constant="21" id="IYg-IY-Rkq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请再次确认密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hhb-83-FDp">
+                    <rect key="frame" x="84" y="102" width="220" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXw-N3-eo1">
+                    <rect key="frame" x="16" y="66" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="f80-On-kkV"/>
+                        <constraint firstAttribute="width" constant="60" id="k5B-T2-YAx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-PB-zm8">
+                    <rect key="frame" x="84" y="150" width="220" height="36"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.51764705879999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="o56-cM-hnc"/>
+                    </constraints>
+                    <state key="normal" title="修改">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickSureButtonAction:" destination="-1" eventType="touchUpInside" id="rTY-Zg-0LY"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入原密码(6~12位)" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zs9-uy-y0c">
+                    <rect key="frame" x="84" y="20" width="220" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入新密码(6~12位)" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="VBE-Ir-sSp">
+                    <rect key="frame" x="84" y="61" width="220" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确认密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob9-Ja-JlM">
+                    <rect key="frame" x="16" y="107" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="J70-fh-zyC"/>
+                        <constraint firstAttribute="height" constant="21" id="duW-lv-ot4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VBE-Ir-sSp" secondAttribute="trailing" constant="16" id="1xQ-f1-4Qy"/>
+                <constraint firstItem="VBE-Ir-sSp" firstAttribute="centerY" secondItem="pXw-N3-eo1" secondAttribute="centerY" id="3Ab-GW-gvN"/>
+                <constraint firstItem="ob9-Ja-JlM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="3dA-gj-pmd"/>
+                <constraint firstItem="VBE-Ir-sSp" firstAttribute="leading" secondItem="pXw-N3-eo1" secondAttribute="trailing" constant="8" id="63T-0g-wNh"/>
+                <constraint firstItem="hhb-83-FDp" firstAttribute="top" secondItem="VBE-Ir-sSp" secondAttribute="bottom" constant="11" id="B52-UL-Sr2"/>
+                <constraint firstItem="zs9-uy-y0c" firstAttribute="centerY" secondItem="bU6-lY-grD" secondAttribute="centerY" id="DSC-0L-ckg"/>
+                <constraint firstItem="zs9-uy-y0c" firstAttribute="leading" secondItem="bU6-lY-grD" secondAttribute="trailing" constant="8" id="E9f-Ll-spU"/>
+                <constraint firstAttribute="trailing" secondItem="MzA-PB-zm8" secondAttribute="trailing" constant="16" id="FqY-9N-tnZ"/>
+                <constraint firstAttribute="trailing" secondItem="zs9-uy-y0c" secondAttribute="trailing" constant="16" id="Hxf-KF-rRQ"/>
+                <constraint firstItem="zs9-uy-y0c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="IKy-wD-3T5"/>
+                <constraint firstItem="hhb-83-FDp" firstAttribute="leading" secondItem="ob9-Ja-JlM" secondAttribute="trailing" constant="8" id="JdW-lG-1sB"/>
+                <constraint firstItem="MzA-PB-zm8" firstAttribute="top" secondItem="hhb-83-FDp" secondAttribute="bottom" constant="18" id="L8M-5H-POr"/>
+                <constraint firstItem="VBE-Ir-sSp" firstAttribute="top" secondItem="zs9-uy-y0c" secondAttribute="bottom" constant="11" id="QYH-aw-frP"/>
+                <constraint firstItem="bU6-lY-grD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="aP4-qN-WT2"/>
+                <constraint firstAttribute="trailing" secondItem="hhb-83-FDp" secondAttribute="trailing" constant="16" id="cyf-ZF-uNa"/>
+                <constraint firstItem="hhb-83-FDp" firstAttribute="centerY" secondItem="ob9-Ja-JlM" secondAttribute="centerY" id="nC6-nB-asG"/>
+                <constraint firstItem="pXw-N3-eo1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="slF-1V-Lcc"/>
+                <constraint firstItem="MzA-PB-zm8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="84" id="v3M-eG-34E"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
